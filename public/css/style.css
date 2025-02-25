@@ -67,7 +67,7 @@
             border-radius: 10px;
             margin-bottom: 20px;
         }
-        .create-post input, .create-post textarea {
+        input,  textarea {
             width: 100%;
             padding: 10px;
             margin: 5px 0;
@@ -86,4 +86,23 @@
         .create-post button:hover {
             background: #666;
         }
-   
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            border: none;
+        }
+
+        /* Hover effect */
+a.button:hover {
+    background-color: #0056b3;
+}
+
+
+

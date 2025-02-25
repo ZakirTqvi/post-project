@@ -20,8 +20,12 @@
             <p>Post ID: <%= post.id %></p>
             <p>Caption: <%= post.caption %></p>
             <img src="<%= post.src  %>" alt="Post Image"> 
- 
-            <button class="buttons">See in Detail</button>
+            
+           <a class="button" href="http://localhost:8080/posts/<%= post.id %>">See in Detail</a>
+           <a class="button" href="http://localhost:8080/posts/<%= post.id %>/edit">Edit</a>
+           <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+            <button class="buttons" type="submit">Delete</button>
+           </form> 
         </div>
 
         <% } %> 
